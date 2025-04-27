@@ -10,7 +10,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-<a> http://127.0.0.1:8000/ </a>
+<!-- <a> http://127.0.0.1:8000/ </a>
 
 
-<img src="img/1.png" width=600>
+<img src="img/1.png" width=600> -->
