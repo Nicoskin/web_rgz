@@ -1,0 +1,208 @@
+/* Задний фон */
+body {
+  background: url("../images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(40, 29, 197); /* Цвет текста для контраста */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для шапки */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Отправляем кнопку в правый угол */
+  padding: 20px;
+  position: relative;
+}
+
+/* Заголовок */
+header h1 {
+  background: #6368ff;/* Тёмный фон для заголовка */
+  padding: 20px;
+  border-radius: 10px;
+  display: flow;
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+  font-size: 24px;
+}
+
+
+/* Кнопка "На главную" */
+.home-btn {
+  text-decoration: none;
+  background-color: #090C7C;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #45a049;
+}
+
+/* Ссылка "На главную" */
+.home-link {
+  text-decoration: none;
+  background-color: #2a2ed1; /* Голубой цвет */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.home-link:hover {
+  background-color: #0b7dda; /* Темнее при наведении */
+}
+
+/* Контейнер для видео */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+  gap: 20px;
+  margin: 20px auto;
+  justify-content: center; /* Центрируем карточки */
+  max-width: 70%; /* Ограничиваем максимальную ширину сетки */
+}
+
+/* Карточка видео - уменьшенный размер */
+.video-card {
+  background: #e1edff;
+  padding: 15px;
+  border-radius: 10px;
+  width: calc(40% - 40px);
+  max-width: 400px; /* Максимальная ширина карточки */
+  min-width: 300px; /* Минимальная ширина карточки */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+/* Видео */
+.video-wrapper {
+  width: 100%;
+}
+
+/* Видео - уменьшенный размер */
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  max-height: 250px; /* Ограничиваем высоту видео */
+  display: block;
+  border-radius: 10px;
+}
+
+/* Кнопка удаления */
+button[type="submit"].delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"].delete-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Комментарии */
+.comments {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(83, 83, 83, 0.1);
+  border-radius: 8px;
+  text-align: left;
+  width: 94%;
+  max-width: 800px;
+  max-height: 300px; /* Ограничиваем высоту блока с комментариями */
+  overflow-y: auto; /* Добавляем вертикальную прокрутку */
+  /* //word-wrap: break-word; Перенос текста */
+}
+
+.comments h3 {
+  margin-bottom: 10px;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments li {
+  margin-bottom: 10px;
+}
+
+/* Поле ввода комментария */
+textarea {
+  width: 90%;
+  height: 60px;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background: rgb(40 41 206 / 10%);
+  color: rgb(94, 116, 214);
+}
+
+/* Кнопка добавления комментария */
+button[type="submit"] {
+  background-color: #1E22AA;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e96f8;
+}
+
+/* Пагинация */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.current {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Заголовок */
+/* header h1 {
+  background: #a2c0e2; 
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+} */
+
+/* Ссылка "Загрузить новое видео" */
+.upload-link {
+  text-decoration: none;
+  background-color: #4CAF50;  /* Зеленый цвет */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.upload-link:hover {
+  background-color: #45a049;  /* Темнее при наведении */
+}
+
